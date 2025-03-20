@@ -5,6 +5,11 @@ import { Suspense } from 'react';
 import CardWrapper from '@/app/ui/dashboard/cards';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import UserAvatar from '@/app/ui/dashboard/user-avatar';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Dashboard',
+  };
 
 export default async function Page() {
   return (
